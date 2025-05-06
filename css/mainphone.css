@@ -1,0 +1,85 @@
+:root {
+    --mauveFonce: #330072;
+
+}
+
+.logo {
+    width: 50vw;
+    min-width: 300px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+li {
+    align-self: center;
+}
+
+.offScreenMenu {
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    width: 100%;
+    justify-content: space-around;
+    font-size: 3rem;
+    position: fixed;
+    background-color: var(--mauveFonce);
+    left: -800px;
+}
+
+.offScreenMenu.active {
+    right:0;
+}
+
+.hamMenu {
+    height: 50px;
+    width: 50px;
+    margin-left: auto;
+    position:relative;
+}
+
+.hamMenu span{
+    height: 5px;
+    width: 100%;
+    background-color: aqua;
+    border-radius: 25px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, 50%);
+    transition: .3s ease;;
+}
+
+.hamMenu span:nth-child(1){
+    top: 25%;
+}
+
+.hamMenu span:nth-child(3){
+    top: 75%;
+}
+
+
+.hamMenu.active span:nth-child(1){
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hamMenu.active span:nth-child(2){
+    opacity: 0;
+}
+
+.hamMenu.active span:nth-child(3){
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    height:100vh;
+    justify-content: space-around;
+}
+
