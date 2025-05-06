@@ -1,0 +1,40 @@
+:root {
+    --mauveFonce: #330072;
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 30vw;
+    min-width: 200px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width:30vw;
+    height: 60px;
+    background-color: #330072;
+    color: white;
+}
+
+html {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.boite {
+    height: 300px;
+}
+
+footer {
+    background-color: rgb(6, 1, 24);
+    height: 300px;
+}
