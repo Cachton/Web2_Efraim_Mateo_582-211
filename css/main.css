@@ -27,14 +27,13 @@ html {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    font-family: timeSS ;
+    font-family: timeSS;
 }
 /* image osm du header */
 .logo {
-    width: 20%;
-    height: 50%;
-    min-width: 200px;
-
+    width: 50vw;
+    min-width: 300px;
+    max-width: 400px;
 }
 
 .menu {
@@ -56,6 +55,11 @@ html {
     color: var(--white);
     text-decoration:none;
 }
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
 .off-screen-menu {
     display: none;
 }
