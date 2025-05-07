@@ -19,7 +19,7 @@ html {
 /* header */
 .header {
     display: flex;
-    width: 100%vw;
+    width: 100%;
     justify-content: space-between;
 }
 /* image osm du header */
@@ -49,6 +49,9 @@ html {
     color: var(--white);
 }
 .off-screen-menu {
+    display: none;
+}
+nav {
     display: none;
 }
 
