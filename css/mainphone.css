@@ -1,6 +1,6 @@
 :root {
     --mauveFonce: #330072;
-
+    --white: #fff;
 }
 
 .logo {
@@ -10,7 +10,7 @@
 
 header {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -18,68 +18,70 @@ li {
     align-self: center;
 }
 
-.offScreenMenu {
+/* off-screen-menu */
+.off-screen-menu {
+    background-color: var(--mauveFonce);
+    height: 100vh;
+    width: 100%;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    right: -450px;
     display: flex;
     flex-direction: column;
-    height:100%;
-    width: 100%;
-    justify-content: space-around;
+    align-items: center;    
+    justify-content: center;
+    text-align: center;
     font-size: 3rem;
-    position: fixed;
-    background-color: var(--mauveFonce);
-    left: -800px;
+    transition: .3s ease;
+    color: var(--white);
+}
+.off-screen-menu.active {
+    right: 0;
 }
 
-.offScreenMenu.active {
-    right:0;
+/* nav */
+nav {
+    padding: 1rem;
+    display: flex;
 }
 
-.hamMenu {
+/* ham menu */
+.ham-menu {
     height: 50px;
-    width: 50px;
+    width: 40px;
     margin-left: auto;
-    position:relative;
+    position: relative;
 }
-
-.hamMenu span{
+.ham-menu span {
     height: 5px;
     width: 100%;
-    background-color: aqua;
+    background-color: var(--mauveFonce);
     border-radius: 25px;
     position: absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%, 50%);
-    transition: .3s ease;;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
 }
-
-.hamMenu span:nth-child(1){
+.ham-menu span:nth-child(1) {
     top: 25%;
 }
-
-.hamMenu span:nth-child(3){
+.ham-menu span:nth-child(3) {
     top: 75%;
 }
-
-
-.hamMenu.active span:nth-child(1){
-    top: 50%;
-    transform: translate(-50%, -50%);
+.ham-menu.active span {
+    background-color: white;
 }
-
-.hamMenu.active span:nth-child(2){
+.ham-menu.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.ham-menu.active span:nth-child(2) {
     opacity: 0;
 }
-
-.hamMenu.active span:nth-child(3){
+.ham-menu.active span:nth-child(3) {
     top: 50%;
-    transform: translate(-50%, -50%);
-}
-
-ul {
-    display: flex;
-    flex-direction: column;
-    height:100vh;
-    justify-content: space-around;
+    transform: translate(-50%, -50%) rotate(-45deg);
 }
 
