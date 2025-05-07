@@ -1,4 +1,6 @@
-
+* {
+    box-sizing: border-box;
+}
 /* variables */
 :root {
     --mauveFonce: #330072;
@@ -9,18 +11,23 @@
     font-family: Butler;
     src: url(../assets/polices/butler/Butler_Webfont/Butler-Black.woff);
 }
+
+@font-face {
+    font-family: TimeSS;
+    src: url(../assets/polices/times_sans_serif/TIMESS__.ttf);
+}
 /* appliquable a toute la page */
 html {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 100%;
 }
 /* header */
 .header {
     display: flex;
     width: 100%;
     justify-content: space-between;
+    font-family: timeSS ;
 }
 /* image osm du header */
 .logo {
@@ -47,6 +54,7 @@ html {
 
 .menu a {
     color: var(--white);
+    text-decoration:none;
 }
 .off-screen-menu {
     display: none;
@@ -88,6 +96,10 @@ footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+
+    .menu {
+        display: none;
     }
 
     /* img logo osm */
