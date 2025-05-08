@@ -96,6 +96,7 @@ footer {
     display: flex;
     background-color: rgb(6, 1, 24);
     height: 300px;
+    color: var(--white);
 }
 
 /* AFFICHAGE POUR TELEPHONE */
