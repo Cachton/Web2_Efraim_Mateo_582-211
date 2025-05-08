@@ -99,15 +99,13 @@ footer {
     height: 300px;
     color: var(--white);
 
+    flex-direction: ;
     font-family: timeSS;
     font-size: 1.3rem;
 }
 
-.logo-footer {
-    width: 50vw;
-    min-width: 300px;
-    max-width: 350px;
-    fill:white;
+#image-logo {
+    fill: white ;
 }
 
 /* AFFICHAGE POUR TELEPHONE */
