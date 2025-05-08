@@ -42,9 +42,9 @@ html {
 }
 
 .menu {
-    justify-self: flex-end;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
     width:50vw;
     background-color: #330072;
@@ -107,9 +107,13 @@ footer {
 #image-logo {
     fill: white ;
 }
+/* AFFICHAGE POUR DESKTOP */
+@media  screen and (min-width: 600px) {
+
+}
 
 /* AFFICHAGE POUR TELEPHONE */
-@media only screen and (max-width: 600px) {
+@media  screen and (max-width: 600px) {
     /* HEADER */
     header {
         display: flex;
