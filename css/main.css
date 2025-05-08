@@ -99,7 +99,7 @@ footer {
     height: 300px;
     color: var(--white);
 
-    flex-direction: ;
+    flex-direction: row;
     font-family: timeSS;
     font-size: 1.3rem;
 }
