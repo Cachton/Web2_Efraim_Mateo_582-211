@@ -98,6 +98,16 @@ footer {
     background-color: rgb(6, 1, 24);
     height: 300px;
     color: var(--white);
+
+    font-family: timeSS;
+    font-size: 1.3rem;
+}
+
+.logo-footer {
+    width: 50vw;
+    min-width: 300px;
+    max-width: 350px;
+    fill:white;
 }
 
 /* AFFICHAGE POUR TELEPHONE */
