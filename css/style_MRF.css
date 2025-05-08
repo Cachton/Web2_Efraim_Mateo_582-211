@@ -1,0 +1,60 @@
+@font-face {
+    font-family: Butler;
+    src: url(../assets/polices/butler/Butler_Webfont/Butler-Black.woff);
+}
+
+@font-face {
+    font-family: TimeSS;
+    src: url(../assets/polices/times_sans_serif/TIMESS__.ttf);
+}
+
+/* grosse carte */
+.grosseCarte {
+    display: flex;
+    width: 70vw;
+    align-items: center;
+    justify-content: space-between;
+}
+.grosseCarteTxt {
+    display: flex;
+    width: 30vw;
+    flex-direction: column;
+}
+.grosseCarteTxt p {
+    font-size: 1.3rem;
+    font-family: TimeSS;
+}
+.photoGrosseCarte {
+    width: 30vw;
+}
+
+/* cartes avec image à droite */
+.carteDroite {
+    display: flex;
+    width: 70vw;
+    align-items: center;
+    justify-content: space-between;
+}
+.carteDroiteTxt {
+    display: flex;
+    width: 30vw;
+    flex-direction: column;
+}
+
+/* cartes avec image à gauche */
+.carteGauche {
+    display: flex;
+    width: 70vw;
+    align-items: center;
+    justify-content: space-between;
+}
+.carteGaucheTxt {
+    display: flex;
+    width: 30vw;
+    flex-direction: column;
+}
+
+/* photo des petites cartes */
+.photoPetiteCarte {
+    width: 25vw;
+}
