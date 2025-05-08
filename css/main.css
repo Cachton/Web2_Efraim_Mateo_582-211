@@ -28,12 +28,17 @@ html {
     width: 100%;
     justify-content: space-between;
     font-family: timeSS;
+    font-size: 1.3rem;
 }
 /* image osm du header */
 .logo {
     width: 50vw;
+}
+
+.logo img {
+    width: 50vw;
     min-width: 300px;
-    max-width: 400px;
+    max-width: 350px;
 }
 
 .menu {
