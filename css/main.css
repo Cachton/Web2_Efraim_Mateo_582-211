@@ -96,7 +96,7 @@ main h1 {
 footer {
     display: flex;
     background-color: rgb(6, 1, 24);
-    height: 300px;
+    height: 1wh;
     color: var(--white);
 
     flex-direction: row;
