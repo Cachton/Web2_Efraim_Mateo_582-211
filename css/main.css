@@ -30,6 +30,12 @@ html {
     font-family: timeSS;
     font-size: 1.3rem;
 }
+
+/* largeur body */
+body {
+    width: 100%
+}
+
 /* image osm du header */
 .logo {
     width: 50vw;
