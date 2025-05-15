@@ -39,6 +39,8 @@
     display: flex;
     width: 30vw;
     flex-direction: column;
+    font-family: TimeSS;
+    font-size: 1.3rem;
 }
 
 /* cartes avec image à gauche */
@@ -52,9 +54,70 @@
     display: flex;
     width: 30vw;
     flex-direction: column;
+    font-family: TimeSS;
+    font-size: 1.3rem;
 }
 
 /* photo des petites cartes */
 .photoPetiteCarte {
     width: 25vw;
+}
+
+@media only screen and (max-width: 600px) {
+main {
+    width: 90vw;
+}
+.menu
+/* grosse carte */
+.grosseCarte {
+    display: block;
+    width: 90vw;
+}
+.grosseCarteTxt {
+    display: flex;
+    min-width: 100%;
+}
+.grosseCarteTxt p {
+    font-size: 1.3rem;
+    font-family: TimeSS;
+}
+.photoGrosseCarte {
+    width: 60vw;
+}
+
+/* cartes avec image à droite */
+.carteDroite {
+    display: flex;
+    width: 70vw;
+    align-items: center;
+    justify-content: space-between;
+}
+.carteDroiteTxt {
+    display: flex;
+    width: 30vw;
+    flex-direction: column;
+    font-family: TimeSS;
+    font-size: 1.3rem;
+}
+
+/* cartes avec image à gauche */
+.carteGauche {
+    display: flex;
+    width: 70vw;
+    align-items: center;
+    justify-content: space-between;
+}
+.carteGaucheTxt {
+    display: flex;
+    width: 30vw;
+    flex-direction: column;
+    font-family: TimeSS;
+    font-size: 1.3rem;
+}
+
+/* photo des petites cartes */
+.photoPetiteCarte {
+    width: 25vw;
+}
+
 }
