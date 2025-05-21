@@ -143,6 +143,13 @@ nav {
     transform: translate(-50%, -50%) rotate(-45deg);
 }
 
+/*Footer affichage téléphone */
+
+.liste-footer {
+    flex-direction: row;
+    
+}
+
 /* DESKTOP AFFICHAGE */
 @media screen and (min-width: 600px) {
     * {
@@ -235,15 +242,21 @@ nav {
     }
 
     /* FOOTER */
-    footer {
-        display: flex;
+    footer { 
         background-color: rgb(6, 1, 24);
-        height: 1wh;
+      
         color: var(--white);
-
-        flex-direction: row;
         font-family: timeSS;
         font-size: 1.3rem;
+
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    svg {
+        height: 100px;
+        width: 100px;
     }
 
     #image-logo {
