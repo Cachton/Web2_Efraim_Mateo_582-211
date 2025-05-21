@@ -165,10 +165,12 @@ svg {
 
 .liste-footer {
     flex-direction: row;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: space-around;
    
     height: 10%; 
-    width: 100%;
+    width: 80%;
+    padding-inline-start: 0px;
 }
 
 /* DESKTOP AFFICHAGE */
@@ -272,13 +274,15 @@ svg {
 
         display: flex;
         flex-direction: row;
-
+        align-items: center;
+        justify-content: space-around;
     }
 
     svg {
         display: block;
         height: 10%;
         width: 20%;
+        align-self: flex-end;
     }
 
     #carre-osm {
