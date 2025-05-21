@@ -26,15 +26,32 @@ main {
         display: flex;
         align-items: center;
         margin: 5vh 0;
+        height: 60vh;
+        justify-content: space-between;
     }
 
     .grosseCarteTxt {
         width: 50%;
     }
 
+    .photoGrosseCarte {
+        max-width: 450px;
+    }
+
     .carteGauche {
         display: flex;
+        width: 70%;
+        flex-direction: row;
         align-items: center;
+        justify-content: space-between;
         margin: 5vh 0;
+    }
+
+    .photoPetiteCarte {
+        width: 45%;
+    }
+
+    .carteGaucheTxt {
+        width: 45%;
     }
 }
