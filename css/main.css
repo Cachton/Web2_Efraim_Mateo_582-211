@@ -1,6 +1,3 @@
-* {
-    box-sizing: border-box;
-}
 /* variables */
 :root {
     --mauveFonce: #330072;
@@ -16,219 +13,237 @@
     font-family: TimeSS;
     src: url(../assets/polices/times_sans_serif/TIMESS__.ttf);
 }
-/* appliquable a toute la page */
-html {
+
+/* HEADER */
+header {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
-}
-/* header */
-.header {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    font-family: timeSS;
-    font-size: 1.3rem;
-}
-
-/* largeur body */
-body {
-    width: 100%
-}
-
-/* image osm du header */
-.logo {
-    width: 50vw;
-}
-
-.logo img {
-    width: 50vw;
-    min-width: 300px;
-    max-width: 350px;
+    align-items: center;
 }
 
 .menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width:50vw;
-    background-color: #330072;
+    display: none;
 }
 
-.menu ul {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
+.logo {
+    width: 100vw;
 }
 
-.menu a {
+/* img logo osm */
+.logo {
+    width: 50vw;
+    min-width: 300px;
+}
+
+/* style par defaut des liens du menu hamburger */
+header a {
     color: var(--white);
-    text-decoration:none;
+    text-decoration: none;
 }
 
-.menu a:hover {
+/* hover des liens du menu hamburger */
+header a:hover {
     text-decoration: underline;
 }
 
+/* lsite d'options header */
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 65vh;
+}
+
+/* elements de la liste */
+li {
+    align-self: center;
+}
+
+/* off-screen-menu */
 .off-screen-menu {
-    display: none;
-}
-nav {
-    display: none;
-}
-
-
-/* titre h1 */
-h1 {
-    font-size: 3rem;
-    font-family: Butler;
-}
-
-/* MAIN */
-main {
+    background-color: var(--mauveFonce);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: -600px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 5vh;
-}
-
-/* titre main */
-main h1 {
-    width: 80vw;
-}
-
-/* FOOTER */
-footer {
-    display: flex;
-    background-color: rgb(6, 1, 24);
-    height: 1wh;
+    justify-content: center;
+    text-align: center;
+    font-size: 3rem;
+    transition: .3s ease;
     color: var(--white);
-
-    flex-direction: row;
-    font-family: timeSS;
-    font-size: 1.3rem;
 }
 
-#image-logo {
-    fill: white ;
-}
-/* AFFICHAGE POUR DESKTOP */
-@media  screen and (min-width: 600px) {
-
+/* offscreen options */
+.off-screen-choices {
+    padding: 0;
 }
 
-/* AFFICHAGE POUR TELEPHONE */
-@media  screen and (max-width: 600px) {
-    /* HEADER */
-    header {
+/* overlay hamburger revient sur l'ecran au click */
+.off-screen-menu.active {
+    right: 0;
+}
+
+/* nav */
+nav {
+    padding: 1rem;
+    display: flex;
+}
+
+/* ham menu */
+.ham-menu {
+    height: 50px;
+    width: 40px;
+    margin-left: auto;
+    position: relative;
+}
+
+/* tites lignes du menu hamburger */
+.ham-menu span {
+    height: 5px;
+    width: 100%;
+    background-color: var(--mauveFonce);
+    border-radius: 25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+    background-color: var(--mauveFonce);
+}
+
+/* movement des tites lignes du menu hamburger */
+.ham-menu span:nth-child(1) {
+    top: 25%;
+}
+
+.ham-menu span:nth-child(3) {
+    top: 75%;
+}
+
+.ham-menu.active span {
+    background-color: var(--white);
+}
+
+.ham-menu.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.ham-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.ham-menu.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/* DESKTOP AFFICHAGE */
+@media screen and (min-width: 600px) {
+    * {
+        box-sizing: border-box;
+    }
+
+    /* appliquable a toute la page */
+    html {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
-        align-items: center;
+    }
+
+    /* header */
+    .header {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        font-family: timeSS;
+        font-size: 1.3rem;
+    }
+
+    /* largeur body */
+    body {
+        width: 100%
+    }
+
+    /* image osm du header */
+    .logo {
+        width: 50vw;
+    }
+
+    .logo img {
+        width: 50vw;
+        min-width: 300px;
+        max-width: 350px;
     }
 
     .menu {
-        display: none;
-    }
-
-    /* img logo osm */
-    .logo {
+        display: flex;
         width: 50vw;
-        min-width: 300px;
+        background-color: #330072;
     }
 
-    /* style par defaut des liens du menu hamburger */
-    header a {
+    .menu ul {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+        padding: 0;
+    }
+
+    .menu a {
         color: var(--white);
-        text-decoration:none;
+        text-decoration: none;
     }
 
-    /* hover des liens du menu hamburger */
-    header a:hover {
+    .menu a:hover {
         text-decoration: underline;
     }
 
-    /* lsite d'options header */
-    ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 65vh;
-    }
-
-    /* elements de la liste */
-    li {
-        align-self: center;
-    }
-
-    /* off-screen-menu */
     .off-screen-menu {
-        background-color: var(--mauveFonce);
-        height: 100vh;
-        width: 100%;
-        position: fixed;
-        top: 0;
-        right: -600px;
+        display: none;
+    }
+
+    nav {
+        display: none;
+    }
+
+
+    /* titre h1 */
+    h1 {
+        font-size: 3rem;
+        font-family: Butler;
+    }
+
+    /* MAIN */
+    main {
         display: flex;
         flex-direction: column;
-        align-items: center;    
-        justify-content: center;
-        text-align: center;
-        font-size: 3rem;
-        transition: .3s ease;
-        color: var(--white);
-    }
-    /* overlay hamburger revient sur l'ecran au click */
-    .off-screen-menu.active {
-        right: 0;
+        align-items: center;
+        margin: 5vh;
     }
 
-    /* nav */
-    nav {
-        padding: 1rem;
+    /* titre main */
+    main h1 {
+        width: 80vw;
+    }
+
+    /* FOOTER */
+    footer {
         display: flex;
+        background-color: rgb(6, 1, 24);
+        height: 1wh;
+        color: var(--white);
+
+        flex-direction: row;
+        font-family: timeSS;
+        font-size: 1.3rem;
     }
 
-    /* ham menu */
-    .ham-menu {
-        height: 50px;
-        width: 40px;
-        margin-left: auto;
-        position: relative;
-    }
-
-    /* tites lignes du menu hamburger */
-    .ham-menu span {
-        height: 5px;
-        width: 100%;
-        background-color: var(--mauveFonce);
-        border-radius: 25px;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        transition: .3s ease;
-    }
-
-    /* movement des tites lignes du menu hamburger */
-    .ham-menu span:nth-child(1) {
-        top: 25%;
-    }
-    .ham-menu span:nth-child(3) {
-        top: 75%;
-    }
-    .ham-menu.active span {
-        background-color: white;
-    }
-    .ham-menu.active span:nth-child(1) {
-        top: 50%;
-        transform: translate(-50%, -50%) rotate(45deg);
-    }
-    .ham-menu.active span:nth-child(2) {
-        opacity: 0;
-    }
-    .ham-menu.active span:nth-child(3) {
-        top: 50%;
-        transform: translate(-50%, -50%) rotate(-45deg);
+    #image-logo {
+        fill: white;
     }
 }
