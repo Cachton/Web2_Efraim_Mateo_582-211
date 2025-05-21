@@ -171,11 +171,11 @@ nav {
 
     /* image osm du header */
     .logo {
-        width: 50vw;
+        width: 30vw;
     }
 
     .logo img {
-        width: 50vw;
+        width: 30vw;
         min-width: 300px;
         max-width: 350px;
     }
@@ -190,8 +190,10 @@ nav {
         display: flex;
         flex-direction: row;
         width: 100%;
+        height: 10vh;
         justify-content: space-around;
         padding: 0;
+        
     }
 
     .menu a {

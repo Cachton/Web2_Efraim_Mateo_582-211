@@ -1,12 +1,3 @@
-@font-face {
-    font-family: Butler;
-    src: url(../assets/polices/butler/Butler_Webfont/Butler-Black.woff);
-}
-
-@font-face {
-    font-family: TimeSS;
-    src: url(../assets/polices/times_sans_serif/TIMESS__.ttf);
-}
 
 main {
     display: block;
@@ -27,4 +18,3 @@ main {
     width: 100%;
 }
 
-/* FORMAT DESKTOP */
