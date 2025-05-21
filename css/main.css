@@ -14,6 +14,10 @@
     src: url(../assets/polices/times_sans_serif/TIMESS__.ttf);
 }
 
+body {
+    margin: 0;
+}
+
 /* HEADER */
 header {
     display: flex;
@@ -25,14 +29,11 @@ header {
     display: none;
 }
 
-.logo {
-    width: 100vw;
-}
-
 /* img logo osm */
 .logo {
     width: 50vw;
     min-width: 300px;
+    margin-left: 1vw;
 }
 
 /* style par defaut des liens du menu hamburger */
