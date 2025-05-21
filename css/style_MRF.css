@@ -1,6 +1,9 @@
 
 main {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 5%;
 }
 
 /* grosse carte */
@@ -17,4 +20,6 @@ main {
 .photoPetiteCarte {
     width: 100%;
 }
+
+
 
