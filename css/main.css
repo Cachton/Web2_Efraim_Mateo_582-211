@@ -145,13 +145,30 @@ nav {
 
 /*Footer affichage téléphone */
 
+footer { 
+    background-color: rgb(6, 1, 24);
+  
+    color: var(--white);
+    font-family: timeSS;
+    font-size: 1.3rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+svg {
+    display: none;
+}
+
+
 .liste-footer {
     flex-direction: row;
     justify-content: space-between;
-
-    margin: none;
-    padding: none;
+   
     height: 10%; 
+    width: 100%;
 }
 
 /* DESKTOP AFFICHAGE */
@@ -259,6 +276,7 @@ nav {
     }
 
     svg {
+        display: block;
         height: 10%;
         width: 20%;
     }
