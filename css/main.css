@@ -147,7 +147,11 @@ nav {
 
 .liste-footer {
     flex-direction: row;
-    
+    justify-content: space-between;
+
+    margin: none;
+    padding: none;
+    height: 10%; 
 }
 
 /* DESKTOP AFFICHAGE */
@@ -255,6 +259,11 @@ nav {
     }
 
     svg {
+        height: 10%;
+        width: 20%;
+    }
+
+    #carre-osm {
         height: 100px;
         width: 100px;
     }
