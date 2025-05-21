@@ -67,7 +67,7 @@ li {
     width: 100%;
     position: fixed;
     top: 0;
-    right: -600px;
+    right: -800px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -155,7 +155,7 @@ nav {
 }
 
 /* DESKTOP AFFICHAGE */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
     * {
         box-sizing: border-box;
     }
