@@ -1,13 +1,43 @@
-main {
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    margin: 0 5%;
-}
+/* phone */
+
+/* PAGE À PROPOS */
 
 /* grosse carte */
 .photoGrosseCarte {
     width: 100%;
+}
+
+.bannerCommu {
+    background-image: url(../assets/img/osm_salle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 10vh;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2vh;
+}
+
+.titreCommu {
+    margin: 2vw;
+    color: var(--white);
+}
+
+.bannerPropos {
+    background-image: url(../assets/img/violons.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 10vh;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2vh;
+}
+
+.titrePropos {
+    margin: 2vw;
+    color: var(--white);
 }
 
 /* carte de gauche */
@@ -20,8 +50,24 @@ main {
     width: 100%;
 }
 
+h2 {
+    font-size: 2rem;
+}
+
+.titreProposDesktop {
+    display: none;
+}
+
+.photoGrosseCarte {
+    display: none;
+}
+
+/* PAGE COMMUNAUTÉ */
+
 /* desktop */
 @media screen and (min-width: 800px) {
+
+    /* Page À propos */
     .grosseCarte {
         display: flex;
         align-items: center;
@@ -35,23 +81,64 @@ main {
     }
 
     .photoGrosseCarte {
-        max-width: 450px;
+        display: flex;
+        max-width: 350px;
     }
 
     .carteGauche {
         display: flex;
-        width: 70%;
+        width: 90%;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
         margin: 5vh 0;
+        background: #330072;
+        background: linear-gradient(90deg, rgba(51, 0, 114, 1) 25%, rgba(51, 0, 114, 0.24) 100%);
+    }
+
+    .titreProposDesktop {
+        display: flex;
+    }
+
+    .bannerPropos {
+        display: none;
+    }
+
+    .bannerCommu {
+        display: none;
+    }
+
+    .carteGaucheTxt {
+        width: 45%;
+        margin-right: 3%;
+    }
+
+    .carteDroite {
+        display: flex;
+        width: 90%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 5vh 0;
+        background: #330072;
+        background: linear-gradient(270deg, rgba(51, 0, 114, 1) 25%, rgba(51, 0, 114, 0.24) 100%);
+    }
+
+    .carteDroiteTxt {
+        width: 45%;
+        margin-left: 3%;
     }
 
     .photoPetiteCarte {
         width: 45%;
     }
 
-    .carteGaucheTxt {
-        width: 45%;
+
+    /* page Communauté */
+
+    .imgOsm {
+        width: 100vw;
+        max-width: 100%;
+        object-fit: cover;
     }
 }
