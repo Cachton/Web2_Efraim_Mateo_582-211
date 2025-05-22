@@ -1,9 +1,7 @@
-main {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    margin: auto;
-}
+
+/* phone */
+
+/* PAGE À PROPOS */
 
 /* grosse carte */
 .photoGrosseCarte {
@@ -20,8 +18,12 @@ main {
     width: 100%;
 }
 
+/* PAGE COMMUNAUTÉ */
+
 /* desktop */
 @media screen and (min-width: 800px) {
+
+    /* Page À propos */
     .grosseCarte {
         display: flex;
         align-items: center;
@@ -75,4 +77,15 @@ main {
     }
 
 
+    /* page Communauté */
+
+    .bannerCommu {
+        
+    }
+
+    .imgOsm {
+        width: 100vw;
+        max-width: 100%;
+        object-fit: cover;
+    }
 }

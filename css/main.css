@@ -14,6 +14,15 @@
     src: url(../assets/polices/times_sans_serif/TIMESS__.ttf);
 }
 
+/* main */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
 body {
     margin: 0;
 }
@@ -145,9 +154,9 @@ nav {
 
 /*Footer affichage téléphone */
 
-footer { 
+footer {
     background-color: rgb(6, 1, 24);
-  
+
     color: var(--white);
     font-family: timeSS;
     font-size: 1.3rem;
@@ -167,8 +176,8 @@ svg {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-   
-    height: 10%; 
+
+    height: 10%;
     width: 80%;
     padding-inline-start: 0px;
 }
@@ -224,12 +233,13 @@ svg {
         height: 10vh;
         justify-content: space-around;
         padding: 0;
-        
+
     }
 
     .menu a {
         color: var(--white);
         text-decoration: none;
+        height: 100%;
     }
 
     .menu a:hover {
@@ -251,23 +261,15 @@ svg {
         font-family: Butler;
     }
 
-    /* MAIN */
-    main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 5vh;
-    }
-
     /* titre main */
     main h1 {
         width: 80vw;
     }
 
     /* FOOTER */
-    footer { 
+    footer {
         background-color: rgb(6, 1, 24);
-      
+
         color: var(--white);
         font-family: timeSS;
         font-size: 1.3rem;
