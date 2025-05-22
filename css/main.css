@@ -214,10 +214,9 @@ svg {
         width: 30vw;
     }
 
-    .logo img {
-        width: 30vw;
-        min-width: 300px;
-        max-width: 350px;
+    .logoFooter {
+        width: 10vw;
+        max-width: 200px;
     }
 
     .menu {
@@ -277,7 +276,7 @@ svg {
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
     svg {
