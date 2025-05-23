@@ -4,11 +4,13 @@
     --white: #fff;
 }
 
+/* font Butler */
 @font-face {
     font-family: Butler;
     src: url(../assets/polices/butler/Butler_Webfont/Butler-Black.woff);
 }
 
+/* font Times */
 @font-face {
     font-family: TimeSS;
     src: url(../assets/polices/times_sans_serif/TIMESS__.ttf);
@@ -34,6 +36,7 @@ header {
     align-items: center;
 }
 
+/* options du header desktop ne sont pas affiché */
 .menu {
     display: none;
 }
@@ -70,11 +73,13 @@ li {
     align-self: center;
 }
 
+/* les liens sont blancs */
 a {
     color: var(--white);
     text-decoration: none;
 }
 
+/* les liens sont soulignés lors du survol */
 a:hover {
     text-decoration: underline;
 }
@@ -162,8 +167,8 @@ nav {
     transform: translate(-50%, -50%) rotate(-45deg);
 }
 
-/*Footer affichage téléphone */
 
+/* footer */
 footer {
     background-color: rgb(6, 1, 24);
     color: var(--white);
@@ -179,13 +184,13 @@ svg {
     display: none;
 }
 
+/* taille du logo OSM dans le footer */
 .logoFooter {
     width: 10vw;
     max-width: 200px;
 }
 
-
-
+/* liste de liens dans le footer */
 .liste-footer {
     flex-direction: row;
     align-items: center;
@@ -234,6 +239,7 @@ svg {
         max-width: 200px;
     }
 
+    /* le menu apparait et prends la moitié de l'écran */
     .menu {
         display: flex;
         width: 50vw;

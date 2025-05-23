@@ -1,12 +1,11 @@
 /* phone */
 
-/* PAGE À PROPOS */
-
 /* grosse carte */
 .photoGrosseCarte {
     width: 100%;
 }
 
+/* petite bannière avec photo au haut de la page */
 .bannerCommu {
     background-image: url(../assets/img/osm_salle.jpg);
     background-repeat: no-repeat;
@@ -18,11 +17,13 @@
     margin-bottom: 2vh;
 }
 
+/* titre de la page communauté */
 .titreCommu {
     margin: 2vw;
     color: var(--white);
 }
 
+/* petite bannière au haut de la page */
 .bannerPropos {
     background-image: url(../assets/img/violons.jpg);
     background-repeat: no-repeat;
@@ -35,6 +36,7 @@
     margin-bottom: 2vh;
 }
 
+/* titre au haut de la page */
 .titrePropos {
     margin: 2vw;
     color: var(--white);
@@ -48,24 +50,29 @@
     background: linear-gradient(360deg, rgba(51, 0, 114, 1) 25%, rgba(51, 0, 114, 0.24) 100%);
 }
 
+/* une des cartes de a page communauté */
 .carteGaucheDiff {
     display: flex;
     flex-direction: column-reverse;
 }
 
+/* photo qui appartient aux cartes droites et gauche */
 .photoPetiteCarte {
     width: 100%;
 }
 
+/* photo qui appartient aux cartes de la page communauté */
 .photoPetiteCarteDiff {
     width: 100%;
 }
 
+/* carte de droite */
 .carteDroite {
     background: #330072;
     background: linear-gradient(360deg, rgba(51, 0, 114, 1) 25%, rgba(51, 0, 114, 0.24) 100%);
 }
 
+/* titre */
 h2 {
     font-size: 2rem;
 }
@@ -75,11 +82,10 @@ h2 {
     display: none;
 }
 
+/* cache la grosse photo en display phone */
 .photoGrosseCarte {
     display: none;
 }
-
-/* PAGE COMMUNAUTÉ */
 
 /* desktop */
 @media screen and (min-width: 800px) {
@@ -93,15 +99,18 @@ h2 {
         justify-content: space-between;
     }
 
+    /* zone de texte de la première carte */
     .grosseCarteTxt {
         width: 50%;
     }
 
+    /* photo de la première carte */
     .photoGrosseCarte {
         display: flex;
         max-width: 350px;
     }
 
+    /* carte de gauche */
     .carteGauche {
         display: flex;
         width: 90%;
@@ -113,23 +122,28 @@ h2 {
         background: linear-gradient(90deg, rgba(51, 0, 114, 1) 25%, rgba(51, 0, 114, 0.24) 100%);
     }
 
+    /* fait apparaitre le titre de la page sur desktop */
     .titreProposDesktop {
         display: flex;
     }
 
+    /* fait disparaitre la carte de display phone */
     .bannerPropos {
         display: none;
     }
 
+    /* fait disparaitre la carte de display phone */
     .bannerCommu {
         display: none;
     }
 
+    /* lorem ipsum de la carte gauche */
     .carteGaucheTxt {
         width: 45%;
         margin-right: 3%;
     }
 
+    /* carte droite */
     .carteDroite {
         display: flex;
         width: 90%;
@@ -141,49 +155,56 @@ h2 {
         background: linear-gradient(270deg, rgba(51, 0, 114, 1) 25%, rgba(51, 0, 114, 0.24) 100%);
     }
 
+    /* texte de la carte droite */
     .carteDroiteTxt {
         width: 45%;
         margin-left: 3%;
     }
 
+    /* photo des carteGauche et carteDroite */
     .photoPetiteCarte {
         width: 45%;
     }
 
 
     /* page Communauté */
-
     .imgOsm {
         width: 100vw;
         max-width: 100%;
         object-fit: cover;
     }
 
+    /* div dans laquelle se trouvent les carteGaucheDiff  et carteDroiteDiff*/
     .cartesCommu {
         display: flex;
         align-items: flex-start;
     }
 
+    /* version altérnative de la carte gauche, utilisée sur la page communauté */
     .carteGaucheDiff {
         display: flex;
         flex-direction: column-reverse;
         width: 40%;
     }
 
+    /* carte droite communauté */
     .carteDroiteDiff {
         display: flex;
         flex-direction: column;
         width: 40%;
     }
 
+    /* texte de la carte gauche */
     .carteGaucheTxtDiff {
         width: 80%;
     }
 
+    /* texte de la carte droite */
     .carteDroiteTxtDiff {
         width: 80%;
     }
 
+    /* photos des carteDroiteDiff et carteGaucheDiff */
     .photoPetiteCarteDiff {
         width: 80%;
     }
