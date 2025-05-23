@@ -36,6 +36,20 @@
     justify-content: center;
 }
 
+.content-contribuer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}  
+
+.content-photo-contribuer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 /* DESKTOP AFFICHAGE */
 @media screen and (min-width: 800px) {
     .content-accueil {
