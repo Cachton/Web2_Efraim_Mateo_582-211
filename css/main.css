@@ -184,6 +184,8 @@ svg {
     height: 10%;
     width: 80%;
     padding-inline-start: 0px;
+    color: var(--white);
+    text-decoration: none;
 }
 
 /* DESKTOP AFFICHAGE */
@@ -272,16 +274,22 @@ svg {
     /* FOOTER */
     footer {
         background-color: rgb(6, 1, 24);
-
         color: var(--white);
         font-family: timeSS;
         font-size: 1.3rem;
-
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
     }
+
+    footer li a {
+        color: var(--white);
+        text-decoration: none;
+        height: 100%;
+    }
+
+
 
     svg {
         display: block;
